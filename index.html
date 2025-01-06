@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <h2 class="name">Typing Speed Test Game</h2>
+      <div class="game-container">
+        <div class="message">
+          Your Playing On
+          <select name="levels" id="">
+            <option value="Easy">Easy</option>
+            <option value="Normal" selected>Normal</option>
+            <option value="Hard">Hard</option>
+          </select>
+          Level & You Have
+          <span class="time"></span>
+          Seconds To Type The Word
+        </div>
+        <div class="start">Start Game</div>
+        <div class="randomWord"></div>
+        <div class="input">
+          <input type="text" placeholder="Type The Word..." />
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="words">Upcoming Words...</div>
+        <div class="details">
+          <div class="detail-time">Time Left: <span></span> Seconds</div>
+          <div class="score">Score: <span>0</span> From <span>0</span></div>
+        </div>
+        <div class="result">
+          <div class="game-over">Game Over</div>
+          <div class="excellent">Excellent</div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
